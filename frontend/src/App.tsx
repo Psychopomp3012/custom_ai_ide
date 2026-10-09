@@ -2,6 +2,7 @@ import './App.css'
 
 import TitleBar from './components/TitleBar';
 import ActivityBar from './components/ActivityBar';
+import PrimarySidebar from './components/PrimarySidebar';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <TitleBar />
       <div className='flex flex-1 overflow-hidden'>
         <ActivityBar />
+        <PrimarySidebar />
       </div>
 
     </div>
