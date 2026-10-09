@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* Magic Electron Dragging CSS */
+.drag-region {
+    -webkit-app-region: drag;
+}
+
+.no-drag-region {
+    -webkit-app-region: no-drag;
+}
+
+/* Default (Light Mode) */
+:root {
+    --ide-bg-base: #ffffff;
+    --ide-bg-panel: #f3f3f3;
+    --ide-bg-hover: #e5e5e5;
+    --ide-text-main: #333333;
+    --ide-text-muted: #666666;
+}
+
+/* Dark Mode (Activated when the 'dark' class is on the html tag) */
+.dark {
+    --ide-bg-base: #1e1e1e;
+    /* VS Code editor background */
+    --ide-bg-panel: #252526;
+    /* VS Code sidebar background */
+    --ide-bg-hover: #333333;
+    /* VS Code button hover */
+    --ide-text-main: #cccccc;
+    --ide-text-muted: #858585;
+}

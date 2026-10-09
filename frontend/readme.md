@@ -1,0 +1,2 @@
+Activity Bar
+Search Icon
