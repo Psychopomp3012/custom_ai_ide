@@ -1,0 +1,11 @@
+node_modules/
+
+# Frontend
+dist/
+
+# Backend
+backend/data
+backend/workspace
+
+# Agent specific
+.agent/
